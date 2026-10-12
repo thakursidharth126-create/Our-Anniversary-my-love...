@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffe4ec">
+<title>For My Love 💗</title>
+<style>
+* { box-sizing: border-box; }
+:root {
+  --pink: #e75480;
+  --dark: #78344f;
+  --cream: #fff8f9;
+}
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--dark);
+  background: linear-gradient(160deg, #fff8fb, #ffe4ec, #fff0f5);
+  text-align: center;
+  overflow-x: hidden;
+}
+section { padding: 65px 20px; }
+.hero {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 35px 22px;
+}
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font: 12px Arial, sans-serif;
+  color: var(--pink);
+}
+h1 { font-size: clamp(42px, 11vw, 68px); margin: 18px 0; }
+h2 { font-size: 34px; margin-top: 0; }
+p { line-height: 1.8; }
+.heart { color: var(--pink); }
+button {
+  border: 0;
+  border-radius: 30px;
+  background: var(--pink);
+  color: white;
+  padding: 15px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px #e7548033;
+  font-family: Arial, sans-serif;
+}
+button:active { transform: scale(.97); }
+.small { font: 13px Arial, sans-serif; opacity: .75; }
+.card {
+  max-width: 580px;
+  margin: 22px auto;
+  padding: 28px 23px;
+  border: 1px solid #f6c5d4;
+  border-radius: 24px;
+  background: #ffffffbd;
+  box-shadow: 0 10px 35px #9d466010;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 13px;
+  max-width: 580px;
+  margin: 25px auto;
+}
+.photo {
+  min-height: 180px;
+  border: 7px solid white;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #f8c9da, #fff1f5);
+  box-shadow: 0 5px 18px #9d466018;
+  overflow: hidden;
+  transform: rotate(-2deg);
+}
+.photo:nth-child(even) { transform: rotate(2deg); }
+.photo img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+.photo .caption {
+  padding: 10px 3px;
+  font-size: 14px;
+}
+.letter { text-align: left; white-space: pre-line; }
+#secret { display: none; }
+#secret.show { display: block; animation: appear .8s ease; }
+footer { padding: 25px; font-size: 14px; }
+.float-heart {
+  position: fixed;
+  bottom: -35px;
+  z-index: 5;
+  pointer-events: none;
+  animation: rise 6s linear forwards;
+}
+@keyframes rise {
+  from { transform: translateY(0) rotate(0deg); opacity: .85; }
+  to { transform: translateY(-115vh) rotate(35deg); opacity: 0; }
+}
+@keyframes appear {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 380px) {
+  .gallery { gap: 8px; }
+  .photo { min-height: 145px; }
+  .photo img { height: 150px; }
+  section { padding: 50px 15px; }
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="eyebrow">A little gift made with love</div>
+  <div style="font-size:48px;margin-top:24px">💗</div>
+  <h1>For My Love</h1>
+  <p style="font-size:19px">From your Sidharth, with all my heart.</p>
+  <p>One special day. One special girl. A million reasons to love you.</p>
+  <button onclick="document.getElementById('story').scrollIntoView()">
+    Open your little surprise 💌
+  </button>
+  <p class="small" style="margin-top:35px">Made just for you ♡</p>
+</section>
+
+<section id="story">
+  <div class="eyebrow">My favorite person</div>
+  <h2>Our little world 🌷</h2>
+  <p>Of all the people in this world,<br>
+     somehow my heart found you.</p>
+  <div class="card">
+    <div style="font-size:38px">🧸💕🌸</div>
+    <h3>Do you know something?</h3>
+    <p>You make ordinary moments feel magical.<br>
+       Your smile is my favorite view.<br>
+       And loving you is my favorite thing.</p>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">Little moments, big feelings</div>
+  <h2>Our memories 📸</h2>
+  <p>Every picture holds a little piece of my heart.</p>
+
+  <div class="gallery" id="photoGallery"></div>
+
+  <p class="small">19 memories, one love story. 💗</p>
+</section>
+
+<section>
+  <div class="eyebrow">From the bottom of my heart</div>
+  <h2>A letter for you 💌</h2>
+  <div class="card letter">
+    My Love, ❤️
+
+    Happy anniversary, meri jaan.
+
+    I don't know if words will ever be enough
+    to explain how special you are to me.
+    But I want you to know that you mean so
+    much more to me than you can imagine.
+
+    Thank you for being you, for making me
+    smile, and for giving me so many beautiful
+    reasons to be happy.
+
+    I may not be perfect, and I may not always
+    find the right words, but my feelings for
+    you are real. I want to keep making
+    memories with you, laughing with you,
+    supporting you, and choosing you every day.
+
+    No matter how much time passes, I hope
+    we always find our way back to each other.
+
+    You are my favorite person, my happiness,
+    and my sweetest little blessing.
+
+    I love you, My Love. More than this little
+    website could ever explain. ❤️
+
+    Forever yours,
+    Sidharth 💗
+  </div>
+</section>
+
+<section>
+  <div style="font-size:48px">🎁</div>
+  <h2>One last little surprise...</h2>
+  <p>My Love, there's something else I want you to know.</p>
+  <button id="surpriseBtn" onclick="revealSurprise()">
+    Tap to unlock your surprise 💝
+  </button>
+  <div id="secret" class="card">
+    <div style="font-size:42px">💖🥹💖</div>
+    <h2>It's always you!</h2>
+    <p>
+      If I could make one wish for us,<br>
+      it would be for a thousand more memories,<br>
+      a million more smiles,<br>
+      and countless days with you by my side.
+    </p>
+    <p style="font-size:22px">I choose you, My Love. Always. ♾️</p>
+    <p>Happy anniversary, meri jaan! 💋</p>
+    <p>— Your Sidharth ❤️</p>
+  </div>
+</section>
+
+<footer>
+
+<script>
+Made with all my love, just for you 💗<br>
+  Sidharth & My Love · Forever and always
+</footer>
+const gallery = document.getElementById('photoGallery');
+
+for (let i = 1; i <= 19; i++) {
+  const frame = document.createElement('div');
+  frame.className = 'photo';
+
+  const img = document.createElement('img');
+  img.src = `photos/photo${i}.jpg`;
+  img.alt = `Our memory ${i}`;
+
+  const caption = document.createElement('div');
+  caption.className = 'caption';
+  caption.textContent = [
+    'My favorite memory 💗',
+    'You and me 🌸',
+    'Your beautiful smile 🥹',
+    'Together is my favorite place ❤️',
+    'My happiness 💕',
+    'A moment to remember ✨',
+    'My favorite person 🧸',
+    'Our little world 🌷',
+    'You make me smile 💖',
+    'Every moment matters 🫶',
+    'My sunshine ☀️',
+    'Just us 💞',
+    'A memory to keep 🌹',
+    'Lucky to have you 🍀',
+    'My sweetest blessing 💝',
+    'You make life beautiful 🦋',
+    'One love, countless memories ♾️',
+    'My forever favorite 💋',
+    'More memories to come 💗'
+  ][i - 1];
+
+  img.onerror = () => {
+    frame.style.display = 'none';
+  };
+
+  frame.append(img, caption);
+  gallery.appendChild(frame);
+}
+</script>
+</body>
+</html>
